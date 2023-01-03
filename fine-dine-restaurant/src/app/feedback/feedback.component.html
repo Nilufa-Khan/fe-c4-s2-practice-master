@@ -6,7 +6,8 @@
 
     <h2 > We appreciate your Feedback! </h2>
 
- 
+
+
  <form (ngSubmit)="onSubmit(feedback)" #feedback="ngForm" >
      <mat-form-field>
          <input type="text" matInput name="firstName" #firstName="ngModel" placeholder="FirstName" [(ngModel)]="feedbackForm.firstName" required minlength="3">
@@ -68,5 +69,5 @@
       </mat-form-field><br>
       <button mat-raised-button color="accent" type="reset">Reset</button>
       <button mat-raised-button color="accent" type="submit" [disabled]="feedback.invalid" >Submit</button>​
-      
+
  </form>
