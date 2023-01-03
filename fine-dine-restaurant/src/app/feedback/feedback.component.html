@@ -12,6 +12,7 @@
      <mat-form-field>
          <input type="text" matInput name="firstName" #firstName="ngModel" placeholder="FirstName" [(ngModel)]="feedbackForm.firstName" required minlength="3">
          <div *ngIf="firstName?.invalid && (firstName?.dirty || firstName?.touched)">​
+
             <div *ngIf="firstName?.errors?.['required']">​
             First name is required​
             </div>​
